@@ -1,0 +1,14 @@
+{
+  "name": "battleline-online-server",
+  "version": "1.0.0",
+  "description": "Battleline Online Game Server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ws": "^8.4.0"
+  }
+}

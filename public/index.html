@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleline Online Game</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="icon" href="img/battleline-favicon.ico" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-board">
+        <div id="opponent-hand" class="card-container opponent-hand">
+          <!-- 相手手札を表示する要素 -->
+          <div class="card unit-card" data-card-id="x1"></div>
+          <div class="card unit-card" data-card-id="x2"></div>
+          <div class="card unit-card" data-card-id="x3"></div>
+          <div class="card unit-card" data-card-id="x4"></div>
+          <div class="card unit-card" data-card-id="x5"></div>
+          <div class="card unit-card" data-card-id="x6"></div>
+          <div class="card unit-card" data-card-id="x7"></div>
+        </div>
+
+        <div class="battlefield">
+          <div class="opponent-field-cards">
+            <div id="opponent-cards-1" class="cards-container"></div>
+            <div id="opponent-cards-2" class="cards-container"></div>
+            <div id="opponent-cards-3" class="cards-container"></div>
+            <div id="opponent-cards-4" class="cards-container"></div>
+            <div id="opponent-cards-5" class="cards-container"></div>
+            <div id="opponent-cards-6" class="cards-container"></div>
+            <div id="opponent-cards-7" class="cards-container"></div>
+            <div id="opponent-cards-8" class="cards-container"></div>
+            <div id="opponent-cards-9" class="cards-container"></div>
+          </div>
+          <div class="flg-container">
+            <div id="flg1" class="circle"></div>
+            <div id="flg2" class="circle"></div>
+            <div id="flg3" class="circle"></div>
+            <div id="flg4" class="circle"></div>
+            <div id="flg5" class="circle"></div>
+            <div id="flg6" class="circle"></div>
+            <div id="flg7" class="circle"></div>
+            <div id="flg8" class="circle"></div>
+            <div id="flg9" class="circle"></div>
+          </div>
+          <div class="my-field-cards">
+            <div id="my-cards-1" class="cards-container"></div>
+            <div id="my-cards-2" class="cards-container"></div>
+            <div id="my-cards-3" class="cards-container"></div>
+            <div id="my-cards-4" class="cards-container"></div>
+            <div id="my-cards-5" class="cards-container"></div>
+            <div id="my-cards-6" class="cards-container"></div>
+            <div id="my-cards-7" class="cards-container"></div>
+            <div id="my-cards-8" class="cards-container"></div>
+            <div id="my-cards-9" class="cards-container"></div>
+          </div>
+        </div>
+
+        <div id="my-hand" class="card-container my-hand">
+          <!-- 自分手札を表示する要素 -->
+          <div class="card" data-card-id="y1"></div>
+          <div class="card" data-card-id="y2"></div>
+          <div class="card" data-card-id="y3"></div>
+          <div class="card" data-card-id="y4"></div>
+          <div class="card" data-card-id="y5"></div>
+          <div class="card" data-card-id="y6"></div>
+          <div class="card" data-card-id="y7"></div>
+        </div>
+      </div>
+
+      <div id="deck" class="card-container deck">
+        <!-- 山札 -->
+        <!-- 部隊カード -->
+        <div class="card unit-card unit-card"></div>
+        <!-- 戦術カード -->
+        <div class="card tactic-card tactic-card"></div>
+      </div>
+    </div>
+
+    <script src="js/client.js"></script>
+  </body>
+</html>
